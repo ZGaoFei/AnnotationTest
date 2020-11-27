@@ -1,0 +1,9 @@
+apply plugin: 'java-library'
+
+dependencies {
+     fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':daggerlib')
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
